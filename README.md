@@ -4,7 +4,7 @@
 
 # CleanCore
 
-**Un nettoyeur de PC Windows qui fait une seule chose : libérer de l'espace disque.**<br>
+**Un seul logiciel pour entretenir ton PC Windows : nettoyage, pilotes, démarrage, programmes, disque et vie privée.**<br>
 Sans publicité, sans abonnement, sans compte.
 
 [![Dernière version](https://img.shields.io/github/v/release/LeKdeX/cleancore-releases?color=0a7b9c&label=version)](https://github.com/LeKdeX/cleancore-releases/releases/latest)
@@ -19,59 +19,61 @@ Sans publicité, sans abonnement, sans compte.
 
 </div>
 
+## Six modules, une seule fenêtre
+
+| Module | Ce qu'il fait |
+|---|---|
+| **Nettoyer** | Fichiers temporaires, caches, journaux, shaders, corbeille. Tu vois ce qui sera supprimé avant de confirmer. |
+| **Pilotes** | Inventaire de tes pilotes, mises à jour via Windows Update et NVIDIA, sauvegarde avant installation, historique. |
+| **Démarrage** | Les programmes qui se lancent avec Windows (registre, dossiers Démarrage, applications du Store). Rien n'est supprimé, tu peux tout réactiver. |
+| **Programmes** | Les programmes installés, triés par taille, désinstallation en lot. |
+| **Disque** | Où part l'espace, dossier par dossier, avec l'espace libre du volume. Les éléments vont à la corbeille. |
+| **Confidentialité** | 11 réglages de vie privée de Windows, avec retour exact à l'état d'origine. |
+
+L'**Accueil** résume le tout : combien de Go à libérer, si les pilotes sont à jour, combien de programmes démarrent avec Windows, combien d'espace reste libre.
+
 ## Pourquoi CleanCore
 
-- **Ultra léger** : moins de 10 Mo de mémoire et 0 % de CPU au repos. Un seul fichier de 7 Mo.
-- **Lisible d'un coup d'œil** : une barre colorée montre quelle catégorie pèse le plus, avec sa part en pourcentage.
-- **Prudent** : tu vois ce qui sera supprimé avant de confirmer, et les fichiers récents sont épargnés.
-- **Sobre** : aucune télémétrie, aucun service en tâche de fond. Une seule connexion réseau : la recherche d'une nouvelle version au démarrage, désactivable.
+- **Ultra léger** : un seul fichier d'environ 9 Mo, 0 % de CPU au repos.
+- **Prudent** : une confirmation avant d'agir, des sauvegardes avant de modifier, des éléments système protégés, et la corbeille plutôt que la suppression définitive.
+- **Sobre** : aucune télémétrie, aucun service en tâche de fond. Seule connexion réseau hors pilotes : la recherche d'une nouvelle version au démarrage, désactivable.
+- **Cohérent** : même fenêtre, mêmes boutons, même thème (sombre ou clair selon Windows) pour les six modules. Le bouclier sur un bouton signale une action qui modifie le système.
 
 ## Téléchargement
 
 | Fichier | Pour qui |
 |---|---|
-| [**CleanCore.exe**](https://github.com/LeKdeX/cleancore-releases/releases/latest/download/CleanCore.exe) | **Version portable.** Tu double-cliques, c'est lancé. Pour le retirer, supprime le fichier. |
-| [**CleanCore-Setup.exe**](https://github.com/LeKdeX/cleancore-releases/releases/latest/download/CleanCore-Setup.exe) | **Installeur.** Ajoute un raccourci dans le menu Démarrer et une désinstallation depuis les paramètres Windows. |
+| [**CleanCore.exe**](https://github.com/LeKdeX/cleancore-releases/releases/latest/download/CleanCore.exe) | **Version portable.** Tu double-cliques, c'est lancé. |
+| [**CleanCore-Setup.exe**](https://github.com/LeKdeX/cleancore-releases/releases/latest/download/CleanCore-Setup.exe) | **Installeur.** Raccourci dans le menu Démarrer et désinstallation depuis Windows. |
 
-Toutes les versions sont dans les [Releases](https://github.com/LeKdeX/cleancore-releases/releases). CleanCore demande les droits administrateur, nécessaires pour nettoyer `Windows\Temp` et les mises à jour Windows.
-
-## Ce qui est nettoyé
-
-| Catégorie | Dossiers |
-|---|---|
-| Fichiers temporaires | `%TEMP%`, `Windows\Temp` |
-| Cache des navigateurs | Chrome, Edge, Firefox |
-| Résidus de Windows Update | `SoftwareDistribution\Download` |
-| Miniatures et cache des icônes | `thumbcache_*`, `iconcache_*` |
-| Journaux et rapports d'erreurs | WER, minidumps, CrashDumps |
-| Caches graphiques (shaders) | DirectX, NVIDIA, AMD |
-| Corbeille *(définitif, décochée par défaut)* | Tous les lecteurs |
+Toutes les versions sont dans les [Releases](https://github.com/LeKdeX/cleancore-releases/releases). CleanCore demande les droits administrateur, nécessaires pour nettoyer `Windows\Temp`, installer des pilotes et modifier les réglages de l'ordinateur.
 
 ## Mises à jour
 
-Au démarrage, CleanCore regarde s'il existe une nouvelle version et affiche un bandeau avec un bouton **Mettre à jour**. Rien n'est installé sans ton clic. Seule une version **signée** par l'auteur est acceptée, puis l'empreinte du fichier téléchargé est contrôlée avant de remplacer quoi que ce soit. La recherche se désactive avec l'interrupteur **Chercher les mises à jour au démarrage**.
+Au démarrage, CleanCore regarde s'il existe une nouvelle version et affiche un bandeau avec un bouton **Mettre à jour**. Rien n'est installé sans ton clic. Seule une version **signée** par l'auteur est acceptée, puis l'empreinte du fichier téléchargé est contrôlée. La recherche se désactive dans les Réglages.
 
 ## Sécurité et vérification
 
-- Les liens et jonctions sont refusés : chaque suppression revérifie le chemin réel du fichier, et les dossiers système ne sont jamais ciblés.
+- **Suppression par handle vérifié**, liens et jonctions refusés.
+- **Désinstallation** : commande MSI reconstruite depuis l'identifiant, programmes de ton compte lancés sans droits élevés.
+- **Registre** : liste fixe de réglages, avec sauvegarde de l'état d'origine.
+- **Disque** : corbeille uniquement, dossiers système et personnels protégés.
 - Chaque Release contient `SHA256SUMS.txt` pour contrôler ton téléchargement :
 
 ```powershell
 Get-FileHash .\CleanCore.exe -Algorithm SHA256
 ```
 
-- Les fichiers de cette Release : `CleanCore.exe`, `CleanCore-Setup.exe`, `SHA256SUMS.txt`, et `update.txt` avec sa signature `update.txt.sig` (c'est ce que CleanCore lit pour proposer une mise à jour).
-
 ## Questions fréquentes
 
 **Windows affiche « Windows a protégé votre ordinateur ». C'est normal ?**
-Oui. Les exécutables ne sont pas signés numériquement, un certificat de signature étant payant. Clique sur *Informations complémentaires*, puis *Exécuter quand même*, après avoir comparé l'empreinte avec `SHA256SUMS.txt`.
+Oui. Les exécutables ne sont pas signés numériquement, un certificat étant payant. Clique sur *Informations complémentaires*, puis *Exécuter quand même*, après avoir comparé l'empreinte avec `SHA256SUMS.txt`.
 
-**Pourquoi la catégorie « Caches graphiques » peut-elle être énorme ?**
-Les pilotes graphiques stockent les shaders compilés des jeux. Ce cache se recrée tout seul, avec un léger ralentissement au premier lancement de chaque jeu.
+**Je venais d'une ancienne version de CleanCore, ou de DriverCore, StartCore, UninstallCore, DiskCore ou PrivacyCore.**
+CleanCore 3 les réunit. Ta sauvegarde PrivacyCore et l'historique de DriverCore sont conservés. Les anciennes versions de CleanCore proposent la mise à jour vers celle-ci.
 
-**Pourquoi tout n'est pas supprimé ?**
-Les fichiers utilisés à cet instant par Windows ou un programme ouvert ne peuvent pas être effacés. Ferme les navigateurs avant de nettoyer pour libérer plus d'espace.
+**Pourquoi le module Pilotes n'a-t-il plus l'analyse automatique ni la ligne de commande ?**
+Ces deux fonctions de DriverCore ne sont pas encore reprises dans CleanCore 3.
 
 ---
 
