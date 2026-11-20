@@ -37,7 +37,7 @@ L'**Accueil** résume le tout : combien de Go à libérer, si les pilotes sont �
 - **Ultra léger** : un seul fichier d'environ 9 Mo, 0 % de CPU au repos.
 - **Prudent** : une confirmation avant d'agir, des sauvegardes avant de modifier, des éléments système protégés, et la corbeille plutôt que la suppression définitive.
 - **Sobre** : aucune télémétrie, aucun service en tâche de fond. Seule connexion réseau hors pilotes : la recherche d'une nouvelle version au démarrage, désactivable.
-- **Cohérent** : même fenêtre, mêmes boutons, même thème (sombre ou clair selon Windows) pour les six modules. Le bouclier sur un bouton signale une action qui modifie le système.
+- **Cohérent** : même fenêtre, mêmes boutons, même thème (sombre ou clair selon Windows) pour les six modules.
 
 ## Téléchargement
 
