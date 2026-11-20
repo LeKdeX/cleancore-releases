@@ -46,7 +46,7 @@ L'**Accueil** résume le tout : combien de Go à libérer, si les pilotes sont �
 | [**CleanCore.exe**](https://github.com/LeKdeX/cleancore-releases/releases/latest/download/CleanCore.exe) | **Version portable.** Tu double-cliques, c'est lancé. |
 | [**CleanCore-Setup.exe**](https://github.com/LeKdeX/cleancore-releases/releases/latest/download/CleanCore-Setup.exe) | **Installeur.** Raccourci dans le menu Démarrer et désinstallation depuis Windows. |
 
-Toutes les versions sont dans les [Releases](https://github.com/LeKdeX/cleancore-releases/releases). CleanCore demande les droits administrateur, nécessaires pour nettoyer `Windows\Temp`, installer des pilotes et modifier les réglages de l'ordinateur.
+Toutes les versions sont dans les [Releases](https://github.com/LeKdeX/cleancore-releases/releases). **Autorisation à la demande :** CleanCore s'ouvre avec tes droits normaux. Un bouton au bouclier (Nettoyer, Mettre à jour, Appliquer, Désinstaller…) ouvre la fenêtre d'autorisation de Windows une seule fois, puis CleanCore se relance en administrateur sur la même page.
 
 ## Mises à jour
 
