@@ -46,7 +46,7 @@ L'**Accueil** résume le tout : combien de Go à libérer, si les pilotes sont �
 | [**CleanCore.exe**](https://github.com/LeKdeX/cleancore-releases/releases/latest/download/CleanCore.exe) | **Version portable.** Tu double-cliques, c'est lancé. |
 | [**CleanCore-Setup.exe**](https://github.com/LeKdeX/cleancore-releases/releases/latest/download/CleanCore-Setup.exe) | **Installeur.** Raccourci dans le menu Démarrer et désinstallation depuis Windows. |
 
-Toutes les versions sont dans les [Releases](https://github.com/LeKdeX/cleancore-releases/releases). **Autorisation à la demande :** CleanCore s'ouvre avec tes droits normaux. Un bouton au bouclier (Nettoyer, Mettre à jour, Appliquer, Désinstaller…) ouvre la fenêtre d'autorisation de Windows une seule fois, puis CleanCore se relance en administrateur sur la même page.
+Toutes les versions sont dans les [Releases](https://github.com/LeKdeX/cleancore-releases/releases). CleanCore demande les droits administrateur à l'ouverture (une fenêtre d'autorisation de Windows) : ils sont nécessaires pour nettoyer `Windows\Temp`, installer des pilotes et modifier les réglages de l'ordinateur.
 
 ## Mises à jour
 
@@ -72,8 +72,8 @@ Oui. Les exécutables ne sont pas signés numériquement, un certificat étant p
 **Je venais d'une ancienne version de CleanCore, ou de DriverCore, StartCore, UninstallCore, DiskCore ou PrivacyCore.**
 CleanCore 3 les réunit. Ta sauvegarde PrivacyCore et l'historique de DriverCore sont conservés. Les anciennes versions de CleanCore proposent la mise à jour vers celle-ci.
 
-**Pourquoi le module Pilotes n'a-t-il plus l'analyse automatique ni la ligne de commande ?**
-Ces deux fonctions de DriverCore ne sont pas encore reprises dans CleanCore 3.
+**Comment être prévenu quand un pilote est en retard ?**
+Dans Pilotes → Options, active l'analyse automatique (disponible avec l'installeur) : une tâche planifiée analyse les pilotes deux minutes après l'ouverture de ta session et affiche une notification s'il y a du nouveau. Depuis un terminal, `cleancore --check` affiche l'état des pilotes (code de sortie 0 = à jour, 1 = mises à jour disponibles, 2 = erreur).
 
 ---
 
