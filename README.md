@@ -7,11 +7,11 @@
 **Un seul logiciel pour entretenir ton PC Windows : nettoyage, pilotes, démarrage, programmes, disque et vie privée.**<br>
 Sans publicité, sans abonnement, sans compte.
 
-[![Dernière version](https://img.shields.io/github/v/release/LeKdeX/cleancore-releases?color=0a7b9c&label=version)](https://github.com/LeKdeX/cleancore-releases/releases/latest)
-[![Téléchargements](https://img.shields.io/github/downloads/LeKdeX/cleancore-releases/total?color=0a7b9c)](https://github.com/LeKdeX/cleancore-releases/releases)
-![Windows 10 / 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0a7b9c)
+[![Dernière version](https://img.shields.io/github/v/release/LeKdeX/cleancore-releases?color=0071e3&label=version)](https://github.com/LeKdeX/cleancore-releases/releases/latest)
+[![Téléchargements](https://img.shields.io/github/downloads/LeKdeX/cleancore-releases/total?color=0071e3)](https://github.com/LeKdeX/cleancore-releases/releases)
+![Windows 10 / 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0071e3)
 
-[![Télécharger la version portable](https://img.shields.io/badge/T%C3%A9l%C3%A9charger-Version_portable_(.exe)-0a7b9c?style=for-the-badge)](https://github.com/LeKdeX/cleancore-releases/releases/latest/download/CleanCore.exe)
+[![Télécharger la version portable](https://img.shields.io/badge/T%C3%A9l%C3%A9charger-Version_portable_(.exe)-0071e3?style=for-the-badge)](https://github.com/LeKdeX/cleancore-releases/releases/latest/download/CleanCore.exe)
 &nbsp;
 [![Télécharger l'installeur](https://img.shields.io/badge/T%C3%A9l%C3%A9charger-Installeur_(Setup.exe)-25272b?style=for-the-badge)](https://github.com/LeKdeX/cleancore-releases/releases/latest/download/CleanCore-Setup.exe)
 
@@ -34,7 +34,7 @@ L'**Accueil** résume le tout : combien de Go à libérer, si les pilotes sont �
 
 ## Pourquoi CleanCore
 
-- **Ultra léger** : un seul fichier d'environ 9 Mo, 0 % de CPU au repos.
+- **Ultra léger** : un seul fichier d'environ 10 Mo, 0 % de CPU au repos.
 - **Prudent** : une confirmation avant d'agir, des sauvegardes avant de modifier, des éléments système protégés, et la corbeille plutôt que la suppression définitive.
 - **Sobre** : aucune télémétrie, aucun service en tâche de fond. Seule connexion réseau hors pilotes : la recherche d'une nouvelle version au démarrage, désactivable.
 - **Cohérent** : même fenêtre, mêmes boutons, même thème (sombre ou clair selon Windows) pour les six modules.
