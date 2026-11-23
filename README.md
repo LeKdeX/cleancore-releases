@@ -25,7 +25,7 @@ Sans publicité, sans abonnement, sans compte.
 |---|---|
 | **Nettoyer** | Fichiers temporaires, caches, journaux, shaders, corbeille. Tu vois ce qui sera supprimé avant de confirmer. |
 | **Pilotes** | Inventaire de tes pilotes, mises à jour via Windows Update et NVIDIA, sauvegarde avant installation, historique. |
-| **Démarrage** | Les programmes qui se lancent avec Windows (registre, dossiers Démarrage, applications du Store). Rien n'est supprimé, tu peux tout réactiver. |
+| **Démarrage** | Les programmes qui se lancent avec Windows (registre, dossiers Démarrage, applications du Store). Recherche et filtre Tous / Actifs / Désactivés. Rien n'est supprimé, tu peux tout réactiver. |
 | **Programmes** | Les programmes installés, triés par taille, désinstallation en lot. |
 | **Disque** | Où part l'espace, dossier par dossier, avec l'espace libre du volume. Les éléments vont à la corbeille. |
 | **Confidentialité** | 11 réglages de vie privée de Windows, avec retour exact à l'état d'origine. |
