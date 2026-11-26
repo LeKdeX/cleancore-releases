@@ -27,7 +27,7 @@ Sans publicité, sans abonnement, sans compte.
 | **Pilotes** | Inventaire de tes pilotes, mises à jour via Windows Update et NVIDIA, sauvegarde avant installation, historique. Si une mise à jour échoue, la raison est expliquée. |
 | **Démarrage** | Les programmes qui se lancent avec Windows (registre, dossiers Démarrage, applications du Store), avec leur impact sur le démarrage (faible, moyen, élevé). Rien n'est supprimé, tu peux tout réactiver. |
 | **Programmes** | Les programmes installés, triés par taille, désinstallation en lot : chaque désinstalleur attend la fin du précédent, jeux Steam compris. |
-| **Disque** | Où part l'espace, dossier par dossier. Les éléments vont à la corbeille ; les restes de programmes désinstallés peuvent être supprimés, et chaque refus dit quoi faire à la place. |
+| **Disque** | Où part l'espace, dossier par dossier, en couleurs. Les éléments vont à la corbeille ; les restes de programmes désinstallés se suppriment en deux clics depuis l'accueil, et chaque refus dit quoi faire à la place. |
 | **Confidentialité** | 11 réglages de vie privée de Windows, avec retour exact à l'état d'origine. |
 | **Sécurité** | L'état de ta protection (antivirus, pare-feu, mises à jour, TPM, BitLocker), une analyse avec Windows Defender et son avancement, et 10 réglages pour renforcer Windows, chacun expliqué au survol. |
 
