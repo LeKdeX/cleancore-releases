@@ -4,7 +4,7 @@
 
 # CleanCore
 
-**Un seul logiciel pour entretenir ton PC Windows : nettoyage, pilotes, démarrage, programmes, disque et vie privée.**<br>
+**Un seul logiciel pour entretenir ton PC Windows : nettoyage, pilotes, démarrage, programmes, disque, vie privée et sécurité.**<br>
 Sans publicité, sans abonnement, sans compte.
 
 [![Dernière version](https://img.shields.io/github/v/release/LeKdeX/cleancore-releases?color=0071e3&label=version)](https://github.com/LeKdeX/cleancore-releases/releases/latest)
@@ -19,25 +19,26 @@ Sans publicité, sans abonnement, sans compte.
 
 </div>
 
-## Six modules, une seule fenêtre
+## Sept modules, une seule fenêtre
 
 | Module | Ce qu'il fait |
 |---|---|
-| **Nettoyer** | Fichiers temporaires, caches, journaux, shaders, corbeille. Tu vois ce qui sera supprimé avant de confirmer. |
-| **Pilotes** | Inventaire de tes pilotes, mises à jour via Windows Update et NVIDIA, sauvegarde avant installation, historique. |
-| **Démarrage** | Les programmes qui se lancent avec Windows (registre, dossiers Démarrage, applications du Store). Recherche et filtre Tous / Actifs / Désactivés. Rien n'est supprimé, tu peux tout réactiver. |
-| **Programmes** | Les programmes installés, triés par taille, désinstallation en lot. |
-| **Disque** | Où part l'espace, dossier par dossier, avec l'espace libre du volume. Les éléments vont à la corbeille. |
+| **Nettoyer** | Fichiers temporaires, caches, journaux, shaders, corbeille (avec un aperçu de ce qu'elle contient). Tu vois ce qui sera supprimé avant de confirmer. |
+| **Pilotes** | Inventaire de tes pilotes, mises à jour via Windows Update et NVIDIA, sauvegarde avant installation, historique. Si une mise à jour échoue, la raison est expliquée. |
+| **Démarrage** | Les programmes qui se lancent avec Windows (registre, dossiers Démarrage, applications du Store), avec leur impact sur le démarrage (faible, moyen, élevé). Rien n'est supprimé, tu peux tout réactiver. |
+| **Programmes** | Les programmes installés, triés par taille, désinstallation en lot : chaque désinstalleur attend la fin du précédent, jeux Steam compris. |
+| **Disque** | Où part l'espace, dossier par dossier. Les éléments vont à la corbeille ; les restes de programmes désinstallés peuvent être supprimés, et chaque refus dit quoi faire à la place. |
 | **Confidentialité** | 11 réglages de vie privée de Windows, avec retour exact à l'état d'origine. |
+| **Sécurité** | L'état de ta protection (antivirus, pare-feu, mises à jour, TPM, BitLocker), une analyse avec Windows Defender et son avancement, et 10 réglages pour renforcer Windows, chacun expliqué au survol. |
 
-L'**Accueil** résume le tout : combien de Go à libérer, si les pilotes sont à jour, combien de programmes démarrent avec Windows, combien d'espace reste libre.
+L'**Accueil** dit d'abord ce qu'il reste à faire, du plus utile au moins utile, puis résume chaque module. Chaque ligne et chaque tuile ouvre la bonne page.
 
 ## Pourquoi CleanCore
 
 - **Ultra léger** : un seul fichier d'environ 10 Mo, 0 % de CPU au repos.
 - **Prudent** : une confirmation avant d'agir, des sauvegardes avant de modifier, des éléments système protégés, et la corbeille plutôt que la suppression définitive.
 - **Sobre** : aucune télémétrie, aucun service en tâche de fond. Seule connexion réseau hors pilotes : la recherche d'une nouvelle version au démarrage, désactivable.
-- **Cohérent** : même fenêtre, mêmes boutons, même thème (clair, sombre ou automatique selon Windows, au choix dans les Réglages) pour les six modules.
+- **Cohérent** : même fenêtre, mêmes boutons, même thème (clair, sombre ou automatique selon Windows, au choix dans les Réglages) pour les sept modules.
 
 ## Téléchargement
 
@@ -57,7 +58,8 @@ Au démarrage, CleanCore regarde s'il existe une nouvelle version et affiche un 
 - **Suppression par handle vérifié**, liens et jonctions refusés.
 - **Désinstallation** : commande MSI reconstruite depuis l'identifiant, programmes de ton compte lancés sans droits élevés.
 - **Registre** : liste fixe de réglages, avec sauvegarde de l'état d'origine.
-- **Disque** : corbeille uniquement, dossiers système et personnels protégés.
+- **Disque** : corbeille uniquement, dossiers système et personnels protégés ; dans Program Files, seuls les restes de programmes désinstallés.
+- **Sécurité** : l'antivirus reste Windows Defender, piloté par ses propres commandes ; état d'origine sauvegardé avant chaque réglage, jamais d'exclusion ajoutée.
 - Chaque Release contient `SHA256SUMS.txt` pour contrôler ton téléchargement :
 
 ```powershell
